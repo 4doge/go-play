@@ -9,7 +9,7 @@ var x = 10
 // false for bool
 // 0.0 for float
 // "" for string
-// nil for pointers / functions / interfaces / slices / channels / maps
+// nil for pointers / func tions / interfaces / slices / channels / maps
 var y int
 
 func main() {

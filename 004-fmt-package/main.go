@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+var y = 42
+
+func main() {
+	fmt.Println(y)
+	fmt.Printf("%v\n", y)
+	fmt.Printf("%T\n", y)
+	fmt.Printf("%b\n", y)
+	fmt.Printf("%x\n", y)
+	fmt.Printf("%#x\n", y)
+
+	s := fmt.Sprintf("%#x\n", y)
+
+	fmt.Println(s)
+
+
+}
