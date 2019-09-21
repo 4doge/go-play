@@ -8,6 +8,8 @@ func main() {
 	fmt.Println(s)
 	s2 := sumEven(sum, nums...)
 	fmt.Println(s2)
+	s3 := sumOdd(sum, nums...)
+	fmt.Println(s3)
 }
 
 func sum(nums ...int) int {
@@ -26,4 +28,14 @@ func sumEven(f func(nums ...int) int, nums...int) int {
 		}
 	}
 	return f(evenNums...)
+}
+
+func sumOdd(f func(nums ...int) int, nums...int) int {
+	oddNums := []int{}
+	for _, v := range nums {
+		if v % 2 != 0 {
+			oddNums = append(oddNums, v)
+		}
+	}
+	return f(oddNums...)
 }
